@@ -71,7 +71,8 @@ export default function Profile() {
         />
         <p className="text-sm self-center">
           {fileUploadError ? (
-            <span className="text-red-700">Error Image Upload!(Image must be less than 2MB)</span>
+          
+          <span className="text-red-700">Error Image Upload!(Image must be less than 2MB)</span>
           ) : filePerc > 0 && filePerc < 100 ? (
             <span className="text-slate-700">{`Uploading ${filePerc}%`} </span>
           ) : filePerc === 100 ? (
