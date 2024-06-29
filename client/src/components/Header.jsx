@@ -8,7 +8,7 @@ export default function Header() {
     <header className="bg-zinc-300 shadow-md">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
         <Link to="/">
-          <h1 className="font-bold text-sm sm:text-2xl flex flex-wrap font-serif">
+          <h1 className="font-bold text-sm sm:text-2xl flex flex-wrap font-cinzel">
             <span className="text-indigo-400">Ankit</span>
             <span className="text-rose-600">Estate</span>
           </h1>
