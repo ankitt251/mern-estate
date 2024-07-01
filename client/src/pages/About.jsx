@@ -3,8 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <div className="py-20 px-4 max-w-6xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4 text-slate-800">About Ankit Estate</h1>
-      <p className="mb-4 text-slate-700">
+      <h1 className="uppercase text-3xl font-semibold mb-4 text-slate-800 font-montserrat">About Ankit Estate</h1>
+      <p className="mb-4 text-slate-700 font-ubuntu">
         Welcome to Ankit Estate, where your dream property awaits. At Ankit
         Estate, we pride ourselves on offering a personalized and seamless real
         estate experience, tailored to meet the unique needs of each client.
@@ -14,7 +14,7 @@ export default function About() {
         of the local market, we are committed to helping you find the perfect
         property that fits your lifestyle and budget.
       </p>
-      <p className="mb-4 text-slate-700">
+      <p className="mb-4 text-slate-700 font-ubuntu">
         Our mission at Ankit Estate is to provide exceptional service and build
         lasting relationships with our clients. We believe that every
         transaction is more than just a deal; it’s a new beginning, a fresh
@@ -25,7 +25,7 @@ export default function About() {
         investment consulting, ensuring that we can meet all your real estate
         needs under one roof.
       </p>
-      <p className="mb-4 text-slate-700">
+      <p className="mb-4 text-slate-700 font-ubuntu">
         At Ankit Estate, we are passionate about real estate and dedicated to
         excellence. Our team stays abreast of the latest market trends and
         utilizes cutting-edge technology to provide you with the most accurate
@@ -35,7 +35,7 @@ export default function About() {
         a partner who will stand by your side and work in your best interest
         every step of the way.
       </p>
-      <p className="mb-4 text-slate-700">
+      <p className="mb-4 text-slate-700 font-ubuntu">
         Thank you for considering Ankit Estate. We look forward to the
         opportunity to help you achieve your real estate dreams and to welcome
         you to our family of satisfied clients. Let us help you turn your real

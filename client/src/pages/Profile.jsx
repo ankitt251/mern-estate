@@ -160,7 +160,7 @@ export default function Profile() {
 
   return (
     <div className="p-3 max-w-lg mx-auto">
-      <h1 className="text-3xl font-semibold text-center my-7"> Profile</h1>
+      <h1 className="text-3xl font-semibold text-center my-7 font-quicksand"> Profile</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           onChange={(e) => setFile(e.target.files[0])}
@@ -175,6 +175,7 @@ export default function Profile() {
           alt="profile"
           className="rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2"
         />
+        <button onClick={() => fileRef.current.click()} className="text-blue-500 inline-block font-semibold focus:outline-none font-montserrat">Update Image</button>
         <p className="text-sm self-center">
           {fileUploadError ? (
             <span className="text-red-700">
@@ -190,35 +191,35 @@ export default function Profile() {
         </p>
         <input
           type="text"
-          placeholder="username"
+          placeholder="Your Username"
           defaultValue={currentUser.username}
           id="username"
-          className="border p-3 rounded-lg"
+          className="border p-3 rounded-lg font-ubuntu"
           onChange={handleChange}
         />
         <input
           type="email"
-          placeholder="email"
+          placeholder="Your Email"
           id="email"
           defaultValue={currentUser.email}
-          className="border p-3 rounded-lg"
+          className="border p-3 rounded-lg font-ubuntu"
           onChange={handleChange}
         />
         <input
           type="password"
-          placeholder="password"
+          placeholder="Your Password"
           onChange={handleChange}
           id="password"
-          className="border p-3 rounded-lg"
+          className="border p-3 rounded-lg font-ubuntu"
         />
         <button
           disabled={loading}
-          className="bg-slate-800 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80"
+          className="bg-slate-800 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80 font-ubuntu"
         >
-          {loading ? "Loading..." : "Update"}
+          {loading ? "Loading..." : "Update Information"}
         </button>
         <Link
-          className="bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
+          className="bg-green-700 font-ubuntu text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
           to={"/create-listing"}
         >
           Add Estate Here
@@ -227,11 +228,11 @@ export default function Profile() {
       <div className="flex justify-between mt-5">
         <span
           onClick={handleDeleteUser}
-          className="text-red-700 cursor-pointer"
+          className="text-red-700 cursor-pointer font-ubuntu"
         >
           Delete Account
         </span>
-        <span onClick={handleSignOut} className="text-red-700 cursor-pointer">
+        <span onClick={handleSignOut} className="text-red-700 cursor-pointer font-ubuntu">
           Sign Out
         </span>
       </div>
@@ -239,7 +240,7 @@ export default function Profile() {
       <p className="text-green-700 mt-5">
         {updateSuccess ? "User is updated successfully!!!!" : " "}
       </p>
-      <button onClick={handleShowListings} className="text-green-700 w-full">
+      <button onClick={handleShowListings} className="text-green-700 w-full font-ubuntu">
         Show Estates
       </button>
       <p className="text-red-700 mt-5">
