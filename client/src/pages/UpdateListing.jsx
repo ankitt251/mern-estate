@@ -171,13 +171,13 @@ export default function CreateListing() {
   return (
     <main className="p-3 max-w-4xl mx-auto">
       <h1 className="text-3xl font-semibold text-center my-7">
-        Update a Listing
+        Update Real Estate Information
       </h1>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
         <div className="flex flex-col gap-4 flex-1">
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Estate Name"
             className="border p-3 rounded-lg"
             id="name"
             maxLength="62"
@@ -197,7 +197,7 @@ export default function CreateListing() {
           />
           <input
             type="text"
-            placeholder="Address"
+            placeholder="Estate Address"
             className="border p-3 rounded-lg"
             id="address"
             required
@@ -328,7 +328,7 @@ export default function CreateListing() {
           <p className="font-semibold">
             Images:
             <span className="font-normal text-gray-600 ml-2">
-              The first image will be the cover (max 6)
+              The first image will be the cover (max 6) and less than 2MB
             </span>
           </p>
           <div className="flex gap-4">
